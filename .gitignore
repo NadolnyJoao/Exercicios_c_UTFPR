@@ -1,0 +1,13 @@
+# Executáveis e arquivos compilados
+bin/
+obj/
+*.o
+*.out
+*.exe
+
+# Arquivos temporários do Code::Blocks
+*.depend
+*.layout
+
+# Arquivos temporários do sistema
+*~
