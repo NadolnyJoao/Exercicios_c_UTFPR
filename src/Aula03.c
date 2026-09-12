@@ -21,29 +21,6 @@ int main()
         printf("Gasolina compensa mais");
     }*/
 
-#include <stdio.h>
-
-int main()
-{
-    //Atividade 1
-    /*
-    float gasolina, alcool, kmGasolina, kmAlcool;
-
-    printf("Informe o preco da gasolina e do alcool: ");
-    scanf("%f %f", &gasolina, &alcool);
-
-    printf("Informe os km/l da gasolina e do alcool: ");
-    scanf("%f %f", &kmGasolina, &kmAlcool);
-
-    gasolina = gasolina / kmGasolina;
-    alcool = alcool / kmAlcool;
-
-    if (alcool < gasolina) {
-        printf("Alcool compensa mais");
-    } else {
-        printf("Gasolina compensa mais");
-    }*/
-
     //Atividade 2
     /*
     int nUsr, n1, n2, n3, invertido;
@@ -59,11 +36,24 @@ int main()
     printf("%d", invertido);
     */
 
+    //Atividade 3
+    /*
+    int n1, n2, n3, maior;
 
+    scanf("%d %d %d", &n1, &n2, &n3);
 
-    return 0;
-}
+    maior = n1;
 
+    if (maior < n2) {
+        maior = n2;
+    }
+
+    if (maior < n3) {
+        maior = n3;
+    }
+
+    printf("%d", maior);
+    */
 
     return 0;
 }
