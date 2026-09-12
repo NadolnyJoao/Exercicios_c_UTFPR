@@ -55,5 +55,23 @@ int main()
     printf("%d", maior);
     */
 
+    //Atividade 4
+    /*
+    int inicio, fim, duracao;
+
+    scanf("%d %d", &inicio, &fim);
+
+    if (fim > inicio) {
+        duracao = fim - inicio;
+    } else {
+        duracao = (24 - inicio) + fim;
+    }
+
+    printf("O jogo durou %d hora(s)", duracao);
+*/
+
+
+
     return 0;
+
 }
