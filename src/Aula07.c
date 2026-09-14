@@ -40,6 +40,86 @@ int main(){
     }else printf("Erro, nenhum numero que respeite o intervalo foi dado");
      */
 
+    //Atividade 01;
+    /*
+    int nUsr, i, fatorial = 0;
+    scanf("%d", &nUsr);
+     i = nUsr-1;
+     fatorial = nUsr;
+    while(i >= 2){
+       fatorial *= i;
+       i--;
+    }printf("%d", fatorial);
+    */
+
+    //Atividade 02;
+    /*
+    int i = 1, n, ant, atual;
+    int flag;
+    scanf("%d", &n);
+    scanf("%d", &ant);
+    while (i <= n){
+        scanf("%d", &atual);
+        if(atual <= ant){
+            flag--;
+        }
+        if(atual >= ant){
+            flag ++;
+        }
+        ant = atual;
+        i++;
+
+    }
+    if (flag == n){
+        printf("Crescente");
+    }
+    else if(flag == -n){
+        printf("Decrescente");
+    }else printf("Nem um nem outro");
+    */
+
+    //Atividade 03;
+    /*
+    int n1, n2, aux, resto;
+    scanf("%d/%d", &n1, &n2);
+    while (n1 >= n2){
+    n1 = n1 - n2;
+    aux++;
+    if (n1 < n2){
+        resto = n1;
+        printf("resto %d \n", resto);
+    }
+    }printf("%d", aux);
+    */
+
+    //Atividade 04;
+    /*
+    int inteiro, n, modulo, achou;
+    scanf("%d %d", &inteiro, &n);
+    while(inteiro > 0 && !achou){
+        modulo = inteiro%10;
+        inteiro = inteiro/10;
+        if (modulo == n){
+            achou = 1;
+        }
+    }if (achou){
+        printf("Tem");
+    }else printf("Nao tem");
+    */
+
+    //Atividade 05
+    /*
+    int ant, atual = 0, i = 1;
+    scanf ("%d", &ant);
+    while(atual >= 0){
+        scanf("%d", &atual);
+        if(atual > ant){
+            i++;
+        }else if(atual < ant && atual >= 0){ i = 1;}
+        ant = atual;
+    }printf("%d", i);
+    */
+
 
 return 0;
 }
