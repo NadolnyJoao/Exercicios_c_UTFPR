@@ -83,5 +83,21 @@ int main ()
         printf("S");
     */
 
+    //Exercicio 05;
+    /*
+    int nUsr, nUsr_copia, i, comparacao = 0;
+
+    scanf("%d", &nUsr);
+    nUsr_copia = nUsr;
+     while (nUsr > 0) {
+        comparacao = comparacao * 10 + (nUsr % 10);
+        nUsr /= 10;
+    }
+       if (comparacao == nUsr_copia) {
+        printf("Eh palindromo");
+    } else {
+        printf("Nao eh");
+    }*/
+
     return (0);
 }
