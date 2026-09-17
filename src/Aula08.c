@@ -64,7 +64,24 @@ int main ()
 
     }*/
 
+    //Exercicio 04;
+    /*
+    int nUsr, i, n_um, n_dois, n_tres, tem_dois = 0;
+    scanf("%d", &nUsr);
+    for(i = 0; i <= nUsr && !tem_dois; i++){
+        scanf("%d", &n_um);
+        scanf("%d", &n_dois);
+        scanf("%d", &n_tres);
+        if (n_um > n_dois && n_dois < n_tres){
+            tem_dois = 1;
+        }
 
+    }
+    if(tem_dois){
+        printf("N");
+    }else
+        printf("S");
+    */
 
     return (0);
 }
