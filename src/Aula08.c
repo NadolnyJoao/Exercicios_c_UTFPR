@@ -19,7 +19,8 @@ int main ()
     printf ("%llu\n", total);
     */
 
-   //Exercicio 1;
+   //Exercicio 01;
+   /*
    int ai, i = 1;
    scanf("%d", &ai);
 
@@ -34,6 +35,22 @@ int main ()
     i++;
    }
     printf("foram gerador %d elementos ", i);
+    */
+
+    //Exercicio 02;
+    /*
+    int n, acessos, i = 0, soma = 0, meta = 1000000;
+    scanf("%d", &n);
+    while (i < n && soma < meta){
+        scanf("%d \n", &acessos);
+        soma += acessos;
+        i++;
+    }
+    if (soma >= meta){
+        printf("O site alcancou 1m de acessos no dia: %d da campanha", i);
+    }else
+        printf("1");
+    */
 
     return (0);
 }
