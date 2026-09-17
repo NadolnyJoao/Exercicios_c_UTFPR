@@ -34,7 +34,7 @@ int main ()
     printf("%d, ", ai);
     i++;
    }
-    printf("foram gerador %d elementos ", i);
+    printf("%d ", i);
     */
 
     //Exercicio 02;
@@ -51,6 +51,20 @@ int main ()
     }else
         printf("1");
     */
+
+    //Exercicio 03;
+    /*
+    int nUsr, ant1 = 0, ant2 = 1, seq = 0, i;
+    scanf("%d", &nUsr);
+    for (i = 0; i < nUsr; i++){
+        printf("%d - ", seq);
+        seq = ant1 + ant2;
+        ant1 = ant2;
+        ant2 = seq;
+
+    }*/
+
+
 
     return (0);
 }
