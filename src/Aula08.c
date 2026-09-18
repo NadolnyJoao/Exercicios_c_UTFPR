@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define MIN_TERMOS 0.2
 
 int main ()
 {
@@ -98,6 +99,19 @@ int main ()
     } else {
         printf("Nao eh");
     }*/
+
+    //Atividade 06;
+    /*
+    float i = 1.0, termo = 0.0, serie = 0.0;
+    while (1/i >= MIN_TERMOS){
+        termo = 1/i;
+        serie += termo;
+        i++;
+        printf("%f %f\n", termo, serie);
+
+    }*/
+
+
 
     return (0);
 }
