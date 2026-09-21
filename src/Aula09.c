@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define N 5
 int main(){
     //Lista;
     /*
@@ -17,7 +18,7 @@ int main(){
         printf("A");
         }
         printf("\n");
-    }*/
+    }
 
      int i, j, n = 4;
     for (i = 1; i <= n; i++){
@@ -25,7 +26,48 @@ int main(){
         printf("A");
         }
         printf("\n");
-    }
+    }*/
+
+    //Exercicio 1;
+    /*
+    int dado1, dado2;
+    for (dado1 = 1; dado1 <= 7; dado1++){
+       //printf(" %d:", dado1);
+        for(dado2 = 1; dado2 <=7; dado2++){
+            printf("%d:%d \n",dado1, dado2);
+        }
+}*/
+
+    //Exercicio 1.2;
+    /*
+    int dado1, dado2, dado3;
+    for (dado1 = 1; dado1 <= 7; dado1++){
+       //printf(" %d:", dado1);
+        for(dado2 = 1; dado2 <=7; dado2++){
+
+            for(dado3 = 1; dado3 <= 7; dado3++){
+                            printf("%d:%d:%d \n",dado1, dado2, dado3);
+
+            }
+        }
+}   */
+
+    //Exercicio 1.3
+    /*
+    int dado1, dado2, dado3;
+    for (dado1 = 1; dado1 <= 7; dado1++){
+       //printf(" %d:", dado1);
+        for(dado2 = dado1; dado2 <=7; dado2++){
+
+            for(dado3 = dado2; dado3 <= 7; dado3++){
+                            printf("%d:%d:%d \n",dado1, dado2, dado3);
+
+            }
+        }
+}*/
+
+
+
 
 return 0;
 }
