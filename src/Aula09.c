@@ -20,8 +20,8 @@ int main(){
     }*/
 
      int i, j, n = 4;
-    for (i = n; i >= n; i--){
-        for(j = 1; j <= n; j++){
+    for (i = 1; i <= n; i++){
+        for(j = 1; j <= n - i + 1; j++){
         printf("A");
         }
         printf("\n");
