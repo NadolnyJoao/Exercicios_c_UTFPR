@@ -3,7 +3,7 @@
 void main(){
 
 //Exercicio 1;
-
+/*
 int quantidade;
 float preco, preco_final, preco_parcelado, capital;
 
@@ -32,9 +32,13 @@ float preco, preco_final, preco_parcelado, capital;
     }else {
         printf("Voce nao pode pagar nem a vista, nem nenhuma parcela");
     }
+    */
 
+//Exercicio 2; 
 
-
+    int nUsr, qnt20, qnt15, qnt10, qnt5; 
+    scanf("%d %d %d %d %d ", &nUsr, qnt20, qnt15, qnt10, qnt5);
+    
 
 
 
