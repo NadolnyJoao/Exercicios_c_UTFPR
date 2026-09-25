@@ -144,7 +144,19 @@ int n;
         aux ++;
     }*/
 
+    //Exercicio 4.2;
+    /*
+    int linhas, colunas, nUsr, aux = 0;
+    scanf("%d ", &nUsr);
+    aux = nUsr - 1;
+    for (linhas = 0; linhas < nUsr; linhas++){
+        printf("\n");
 
-
+        for (colunas = 0; colunas < nUsr - linhas; colunas++){
+            printf("%c", 'A' + aux);
+        }
+        aux --;
+    }
+    */
 return 0;
 }
