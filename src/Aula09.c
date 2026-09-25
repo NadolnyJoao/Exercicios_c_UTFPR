@@ -65,8 +65,26 @@ int main(){
             }
         }
 }*/
+    int num = 2, j, eh_primo, soma = 0, count_primos = 0;
 
+while(count_primos < N) {
+    eh_primo = 1; 
+    
+    for(j = 2; j < num; j++) {
+        if (num % j == 0) {
+            eh_primo = 0; 
+            break;        
+        }
+    }
 
+    if(eh_primo) {
+        soma += num;
+        printf("%d ", num);
+        count_primos++;
+    }
+    num++;
+}
+printf("\n%d ", soma);
 
 
 return 0;
