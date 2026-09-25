@@ -128,7 +128,22 @@ int n;
         }
 
 
+
     }*/
+
+    //Exercicio 4.1
+    /*
+    int linhas, colunas, nUsr, aux = 0;
+    scanf("%d ", &nUsr);
+    for (linhas = 0; linhas < nUsr; linhas++){
+        printf("\n");
+
+        for (colunas = 0; colunas < nUsr - linhas; colunas++){
+            printf("%c", 'A' + colunas + aux);
+        }
+        aux ++;
+    }*/
+
 
 
 return 0;
