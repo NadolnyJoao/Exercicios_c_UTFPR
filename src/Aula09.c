@@ -65,18 +65,18 @@ int main(){
             }
         }
 }*/
-   
+
     //Exercicio 2;
     /*
     int num = 2, j, eh_primo, soma = 0, count_primos = 0;
 
 while(count_primos < N) {
-    eh_primo = 1; 
-    
+    eh_primo = 1;
+
     for(j = 2; j < num; j++) {
         if (num % j == 0) {
-            eh_primo = 0; 
-            break;        
+            eh_primo = 0;
+            break;
         }
     }
 
@@ -115,8 +115,21 @@ int n;
 
         num++;
     }*/
-    
-    
+
+    //Exercicio 4;
+    /*
+    int linhas, colunas, nUsr, aux = 0;
+    scanf("%d ", &nUsr);
+    for (linhas = 0; linhas < nUsr; linhas++){
+        printf("\n");
+
+        for (colunas = 0; colunas < nUsr - linhas; colunas++){
+            printf("%c", 'A' + colunas);
+        }
+
+
+    }*/
+
 
 return 0;
 }
