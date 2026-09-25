@@ -65,6 +65,9 @@ int main(){
             }
         }
 }*/
+   
+    //Exercicio 2;
+    /*
     int num = 2, j, eh_primo, soma = 0, count_primos = 0;
 
 while(count_primos < N) {
@@ -85,7 +88,35 @@ while(count_primos < N) {
     num++;
 }
 printf("\n%d ", soma);
+*/
 
+    //Exercicio 3;
+    /*
+int n;
+    scanf("%d", &n);
+
+    int num = 1;
+
+    while (1) {
+        int contador = 0;
+
+        for (int i = 1; i <= n; i++) {
+            if (num % i != 0) {
+                break; // Se não for divisível por 'i', já descarta esse 'num'
+            }
+            contador++;
+        }
+
+        // Se conseguiu dividir por todos os números de 1 até n
+        if (contador == n) {
+            printf("O menor numero divisivel de 1 a %d eh: %d\n", n, num);
+            break;
+        }
+
+        num++;
+    }*/
+    
+    
 
 return 0;
 }
