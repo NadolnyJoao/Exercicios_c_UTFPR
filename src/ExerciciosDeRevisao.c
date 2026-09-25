@@ -34,11 +34,11 @@ float preco, preco_final, preco_parcelado, capital;
     }
     */
 
-//Exercicio 2; 
+//Exercicio 2;
 
-    int nUsr, qnt20, qnt15, qnt10, qnt5; 
+    int nUsr, qnt20, qnt15, qnt10, qnt5;
     scanf("%d %d %d %d %d ", &nUsr, qnt20, qnt15, qnt10, qnt5);
-    
+
 
 
 
