@@ -11,3 +11,23 @@ int main(){
 
 return 0;
 }*/
+    int eh_pa(int n1, int n2, int n3, int n4){
+    if (n2 - n1 == n4 - n3 && n3 - n2 == n2 - n1){
+        int razao = n2 - n1;
+        return (razao);
+    }else
+        return 0;
+
+    }
+    int main(){
+
+    int n1 = 0, n2 = 2, n3 = 4, n4 = 6w, pa;
+    pa = eh_pa(n1, n2, n3, n4);
+    if (pa != 0){
+        printf("%d", pa);
+    }else{
+        printf("nao eh pa");
+    }
+
+
+    return 0;}
