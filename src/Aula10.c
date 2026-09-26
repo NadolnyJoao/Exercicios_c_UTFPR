@@ -21,7 +21,7 @@ return 0;
     }
     int main(){
 
-    int n1 = 0, n2 = 2, n3 = 4, n4 = 6w, pa;
+    int n1 = 0, n2 = 2, n3 = 4, n4 = 6, pa;
     pa = eh_pa(n1, n2, n3, n4);
     if (pa != 0){
         printf("%d", pa);
