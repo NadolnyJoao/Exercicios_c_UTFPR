@@ -1,16 +1,17 @@
 #include <stdio.h>
 //Lista;
 /*
-int eh_bisexto(int ano){
-    return (ano % 400 == 0 || (ano % 4 == 0 && ano % 100 != 0));
-}
-int main(){
-    int ano_atual = 2024;
-    printf("%d", eh_bisexto(ano_atual));
+    int eh_bisexto(int ano){
+        return (ano % 400 == 0 || (ano % 4 == 0 && ano % 100 != 0));
+    }
+    int main(){
+        int ano_atual = 2024;
+        printf("%d", eh_bisexto(ano_atual));
+    return 0;
+    }*/
 
 
-return 0;
-}*/
+    /*
     int eh_pa(int n1, int n2, int n3, int n4){
     if (n2 - n1 == n4 - n3 && n3 - n2 == n2 - n1){
         int razao = n2 - n1;
@@ -28,6 +29,6 @@ return 0;
     }else{
         printf("nao eh pa");
     }
+    return 0;}*/
 
-
-    return 0;}
+    
