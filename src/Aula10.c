@@ -104,7 +104,7 @@
     }*/
 
     //Exercicio 5;
-
+    /*
     unsigned int inverteNum (unsigned int n);
     int main(){
     printf("%d ", inverteNum(1234));
@@ -118,10 +118,7 @@
             n /= 10;
         }
         return inv;
-    }
-
-
-
+    }*/
 
     //Exercicio 6;
     /*
