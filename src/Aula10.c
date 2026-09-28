@@ -49,6 +49,25 @@
     return 0;
     }
 */
+    //Exercicio 2;
+
+    double casasDecimais (double x);
+    int main(){
+    float nUsr = 1.25;
+    printf("%f ", casasDecimais(nUsr));
+    return 0;
+    }
+
+    double casasDecimais (double x){
+
+        int xInt = (int) x;
+        return (float) xInt - x;
+
+
+    }
+
+
+
 
 
 
