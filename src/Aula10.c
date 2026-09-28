@@ -10,7 +10,6 @@
     return 0;
     }*/
 
-
     /*
     int eh_pa(int n1, int n2, int n3, int n4){
     if (n2 - n1 == n4 - n3 && n3 - n2 == n2 - n1){
@@ -67,6 +66,7 @@
     }
 */
     //Exercicio 3;
+    /*
     int proxFibonacci (int n);
     int main(){
     printf("%d ", proxFibonacci(15));
@@ -83,11 +83,25 @@
     }
     return fibonacci;
     }
+    */
 
+    //Exercicio 4;
+    /*
+    unsigned long long potencia (unsigned int base, unsigned int expoente);
+    int main(){
 
+    printf("%d ", potencia(3, 2));
 
+    return 0;}
 
+    unsigned long long potencia (unsigned int base, unsigned int expoente){
+    int i, resultado = 1;
+    for (i = 1; i <= expoente; i++){
+    resultado *= base;
 
+    }
+    return resultado;
+    }*/
 
 
 
