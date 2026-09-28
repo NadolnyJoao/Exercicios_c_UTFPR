@@ -104,7 +104,7 @@
     }*/
 
     //Exercicio 5;
-    /*
+
     unsigned int inverteNum (unsigned int n);
     int main(){
     printf("%d ", inverteNum(1234));
@@ -112,17 +112,16 @@
     return 0;
     }
     unsigned int inverteNum (unsigned int n){
-    int final = 1, aux = 1;
-    while (n){
-    aux = n%10;
-    final += aux * 10;
-    n /= 10;
-
+        int inv =0;
+        while (n){
+            inv = inv*10 + n%10;
+            n /= 10;
+        }
+        return inv;
     }
-    return final;
 
-    }
-    */
+
+
 
     //Exercicio 6;
     /*
