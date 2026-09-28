@@ -1,6 +1,6 @@
 #include <stdio.h>
 //Lista;
-/*
+    /*
     int eh_bisexto(int ano){
         return (ano % 400 == 0 || (ano % 4 == 0 && ano % 100 != 0));
     }
@@ -29,6 +29,34 @@
     }else{
         printf("nao eh pa");
     }
-    return 0;}*/
+    return 0;}
+    */
+    //Exercicio 1;
+    /*
+    int arredonda (double x){
+        if (x >= 0){
+            return ((int) (x + 0.5));
+        return ((int) (x - 0.5));
+        }
+    }
 
-    
+
+    int main(){
+    float nUsr = 2.7;
+    printf("%d ", arredonda(nUsr));
+
+
+    return 0;
+    }
+*/
+
+
+
+
+
+
+
+
+
+
+
