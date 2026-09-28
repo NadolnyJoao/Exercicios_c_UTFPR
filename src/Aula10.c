@@ -50,7 +50,7 @@
     }
 */
     //Exercicio 2;
-
+/*
     double casasDecimais (double x);
     int main(){
     float nUsr = 1.25;
@@ -64,6 +64,24 @@
         return (float) xInt - x;
 
 
+    }
+*/
+
+    int proxFibonacci (int n);
+    int main(){
+    printf("%d ", proxFibonacci(15));
+
+    return 0;
+    }
+    int proxFibonacci (int n){
+    int anterior = 0, atual = 1, passou = 0, i, fibonacci;
+    while(fibonacci < n){
+        fibonacci = atual + anterior;
+        anterior = atual;
+        atual = fibonacci;
+
+    }
+    return fibonacci;
     }
 
 
