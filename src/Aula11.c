@@ -38,51 +38,45 @@ void rolaTecido();
     }
 */
 
+//Exercicio 2;
+
 #include <stdio.h>
 #define LARGURA_FAIXA 6
-
 void pontoRolo1();
 void pontoRolo2();
 void moveAgulha();
 void rolaTecido();
 
-int main() {
-    int i, n_pontos = 1, k = 0;
-    while (k < 10) {
-
-        for (i = 0; i < LARGURA_FAIXA; i++) {
-            if ((i % 7) < n_pontos) {
-                pontoRolo2();
-            } else {
-                pontoRolo1();
-            }
+        void main (){
+    int i, n_pontos;
+    // Funciona até desligar ou o tecido acabar.
+    while (1)
+    {
+        for (i = 0; i < LARGURA_FAIXA; i++)
+        {
+        if (i < n_pontos)
+            pontoRolo1 ();
+        else
+            pontoRolo2 ();
         }
-
-        rolaTecido();
-
-        if (n_pontos >= 6) {
-            n_pontos = 1;
-        } else {
+        if (n_pontos >= LARGURA_FAIXA)
+            n_pontos = 0;
+        else
             n_pontos++;
-        }
-        k++;
+        rolaTecido ();
+    }
+    }
+    void pontoRolo1(){
+    printf("v");
+    }
+    void pontoRolo2(){
+    printf("a");
+    }
+    void moveAgulha(){
+    printf(" ");
+    }
+    void rolaTecido(){
+    printf("\n");
     }
 
-    return 0;
-}
 
-void pontoRolo1() {
-    printf("v");
-}
-
-void pontoRolo2() {
-    printf("a");
-}
-
-void moveAgulha() {
-    printf(" ");
-}
-
-void rolaTecido() {
-    printf("\n");
-}
