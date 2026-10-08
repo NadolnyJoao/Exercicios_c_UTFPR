@@ -94,32 +94,21 @@ void rolaTecido();
     // Funciona até desligar ou o tecido acabar.
     while (k < 15)
     {
-        for (i = 0; i < LARGURA_FAIXA; i++)
+        for (i = 0; i < n_pontos; i++)
         {
-            if(eh_v == 1){
-        if (i < n_pontos)
-            pontoRolo1 ();
-        else
-            moveAgulha ();
-        }else
-            if(eh_v == 0){
-        if (i < n_pontos)
-            pontoRolo2 ();
-        else
-            moveAgulha ();
-        }
-
-        }
+            if (eh_v)
+                pontoRolo1();
+            else
+                pontoRolo2();
+            }
+            if (n_pontos > LARGURA_FAIXA){
+                n_pontos = 1;
+                eh_v = !eh_v;
+            }
+            rolaTecido();
 
 
 
-        if (n_pontos >= LARGURA_FAIXA){
-            n_pontos = 0;
-            eh_v = !eh_v;
-        }
-        else
-            n_pontos++;
-        rolaTecido ();
         k++;
     }
     }
@@ -135,5 +124,6 @@ void rolaTecido();
     void rolaTecido(){
     printf("\n");
     }
+
 
 
