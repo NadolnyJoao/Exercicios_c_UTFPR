@@ -4,6 +4,10 @@ obj/
 *.o
 *.out
 *.exe
+a.out
+src/Aula*
+!src/Aula*.c
+!src/Aula*.h
 
 # Arquivos temporários do Code::Blocks
 *.depend
@@ -11,3 +15,18 @@ obj/
 
 # Arquivos temporários do sistema
 *~
+
+# Ignorar tudo exceto arquivos .c e .h
+*
+!*.c
+!*.h
+!*/
+!Makefile
+!README.md
+!Exercicios_C_UTFPR.cbp
+!LICENSE
+!.gitignore
+!src/
+!src/**/*.c
+!src/**/*.h
+
