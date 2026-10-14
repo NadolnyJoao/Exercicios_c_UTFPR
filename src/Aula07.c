@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdbool.h>
 int main(){
     //Lista Aula 07;
     /*
@@ -55,7 +56,7 @@ int main(){
     //Atividade 02;
     /*
     int i = 1, n, ant, atual;
-    int flag;
+    int flag = 0;
     scanf("%d", &n);
     scanf("%d", &ant);
     while (i <= n){
@@ -80,7 +81,7 @@ int main(){
 
     //Atividade 03;
     /*
-    int n1, n2, aux, resto;
+    int n1, n2, aux = 0, resto;
     scanf("%d/%d", &n1, &n2);
     while (n1 >= n2){
     n1 = n1 - n2;
@@ -94,7 +95,7 @@ int main(){
 
     //Atividade 04;
     /*
-    int inteiro, n, modulo, achou;
+    int inteiro, n, modulo, achou = 0;
     scanf("%d %d", &inteiro, &n);
     while(inteiro > 0 && !achou){
         modulo = inteiro%10;
