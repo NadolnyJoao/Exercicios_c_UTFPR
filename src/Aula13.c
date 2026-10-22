@@ -72,6 +72,7 @@ int main() {
 }*/
 
 // Exercicio 2;
+/*
 int main() {
   srand(time(NULL));
   int vetor[N], i, j, aux, soma = 0, cont = 0, media = 0;
@@ -101,4 +102,13 @@ int main() {
   }
 
   return 0;
+}*/
+// Exercicio 2 (TODO)
+/*
+int main(){
+  int vetor[1024], i, nUSR;
+  scanf("%d \n, ")
+
+  return 0;
 }
+*/
