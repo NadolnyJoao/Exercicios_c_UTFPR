@@ -70,3 +70,35 @@ int main() {
 
   return 0;
 }*/
+
+// Exercicio 2;
+int main() {
+  srand(time(NULL));
+  int vetor[N], i, j, aux, soma = 0, cont = 0, media = 0;
+  for (i = 0; i < N; i++) {
+    aux = rand() % (40 + 1 - (-40)) - 40;
+    if (aux > 0) {
+      vetor[cont] = aux;
+      soma += aux;
+      cont++;
+    }
+  }
+
+  if (cont > 0) {
+    media = soma / cont;
+    printf("Media dos valores positivos: %d\n\n", media);
+
+    for (j = 0; j < cont; j++) {
+      if (vetor[j] > media)
+        printf("%d e maior que a media\n", vetor[j]);
+      else if (vetor[j] == media)
+        printf("%d e igual a media\n", vetor[j]);
+      else
+        printf("%d e menor que a media\n", vetor[j]);
+    }
+  } else {
+    printf("Nenhum numero positivo foi gerado.\n");
+  }
+
+  return 0;
+}
