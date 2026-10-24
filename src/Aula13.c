@@ -112,3 +112,12 @@ int main(){
   return 0;
 }
 */
+
+int main() {
+  int vetor[10] = {0}, i, ehPar, nUSR1, nUSR2;
+  while (nUSR1 > 0) {
+    vetor[n % 10]++;
+  }
+
+  return 0;
+}
