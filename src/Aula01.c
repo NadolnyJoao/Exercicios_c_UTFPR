@@ -5,7 +5,7 @@ int main(){
     /*
     double volume, nUsr;
     scanf("%lf", &nUsr);
-    volume = (3.0/4.0) * M_PI * pow(nUsr, 3);
+    volume = (4.0/3.0) * M_PI * pow(nUsr, 3);
     printf("%lf", volume);
 */
     //Atividade 2

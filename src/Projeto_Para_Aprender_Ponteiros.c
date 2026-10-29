@@ -45,8 +45,8 @@ int main() {
 
   int i = 10;
   int *ptr = &i;
-  scanf("%d\n", &i);
-  printf("%d, i\n");
+  scanf("%d", &i);
+  printf("%d\n", *ptr);
 
   return 0;
 }

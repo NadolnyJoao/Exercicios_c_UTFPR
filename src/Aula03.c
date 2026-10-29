@@ -27,7 +27,7 @@ int main() {
   nUsr = nUsr/10;
   d = nUsr%10;
   nUsr = nUsr/10;
-  u = nUsr%13;
+  u = nUsr%10;
   nUsr = nUsr/10;
   c = c*100;
   d = d*10;
@@ -54,7 +54,7 @@ int main() {
   int tempoDeJogo;
 
   scanf("%d %d", &horaInicio, &horaFim);
-  if (horaInicio >= 0 || horaInicio <= 24 && horaFim >= 0 || horaFim <= 24){
+  if (horaInicio >= 0 && horaInicio <= 24 && horaFim >= 0 && horaFim <= 24){
    if(horaInicio > horaFim){
       horaInicio = horaInicio - 24;
       horaInicio = horaInicio *(-1);

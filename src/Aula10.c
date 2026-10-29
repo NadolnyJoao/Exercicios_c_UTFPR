@@ -35,8 +35,8 @@
     int arredonda (double x){
         if (x >= 0){
             return ((int) (x + 0.5));
-        return ((int) (x - 0.5));
         }
+        return ((int) (x - 0.5));
     }
 
 
@@ -74,7 +74,7 @@
     return 0;
     }
     int proxFibonacci (int n){
-    int anterior = 0, atual = 1, passou = 0, i, fibonacci;
+    int anterior = 0, atual = 1, fibonacci = 1;
     while(fibonacci < n){
         fibonacci = atual + anterior;
         anterior = atual;
@@ -90,12 +90,13 @@
     unsigned long long potencia (unsigned int base, unsigned int expoente);
     int main(){
 
-    printf("%d ", potencia(3, 2));
+    printf("%llu ", potencia(3, 2));
 
     return 0;}
 
     unsigned long long potencia (unsigned int base, unsigned int expoente){
-    int i, resultado = 1;
+    unsigned int i;
+    unsigned long long resultado = 1;
     for (i = 1; i <= expoente; i++){
     resultado *= base;
 

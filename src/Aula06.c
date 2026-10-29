@@ -42,6 +42,10 @@ for(int nUsr = 1000; nUsr <= 9999; nUsr++){
         scanf("%f", &nUsr);
 
         notas += nUsr;
+        if (i == 0){
+            maior = nUsr;
+            menor = nUsr;
+        }
         if (maior < nUsr){
             maior = nUsr;
         }

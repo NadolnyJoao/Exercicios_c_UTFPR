@@ -1,8 +1,8 @@
 # Exercícios em C — UTFPR
 
-Repositório utilizado para armazenar exercícios e atividades desenvolvidos durante as aulas de programação do curso de Sistemas de Informação da UTFPR.
+Repositório com exercícios e atividades desenvolvidas durante as aulas de Programação do curso de Sistemas de Informação da UTFPR.
 
-O conteúdo acompanha meu aprendizado da linguagem C ao longo da graduação e pode ser revisado conforme novos conceitos forem estudados.
+O conteúdo tem como objetivo registrar e acompanhar minha evolução no aprendizado da linguagem C ao longo da graduação.
 
 ## Organização
 
@@ -25,4 +25,4 @@ gcc -Wall -Wextra -std=c17 src/NomeDoArquivo.c -o programa
 
 ## Observação
 
-Este é um repositório de estudos, criado principalmente para registrar e acompanhar minha evolução durante as aulas.
+Este é um repositório de estudos, criado para registrar e acompanhar a evolução dos meus conhecimentos ao longo das aulas.

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main(){
+int main(void) {
 
 //Exercicio 1;
 /*
@@ -37,12 +37,7 @@ float preco, preco_final, preco_parcelado, capital;
 //Exercicio 2;
 
     int nUsr, qnt20, qnt15, qnt10, qnt5;
-    scanf("%d %d %d %d %d ", &nUsr, qnt20, qnt15, qnt10, qnt5);
+    scanf("%d %d %d %d %d", &nUsr, &qnt20, &qnt15, &qnt10, &qnt5);
 
-
-
-
-
-
-
+    return 0;
 }

@@ -3,7 +3,7 @@ int main(){
     //Lista 04
     /* int nUsr;
     scanf ("%d", &nUsr);
-    if (nUsr&2 == 0 && nUsr > 10 || nUsr&2 == 1 && nUsr < 50){
+    if ((nUsr % 2 == 0 && nUsr > 10) || (nUsr % 2 == 1 && nUsr < 50)){
         printf("SIM");
     }else
     printf("NAO");
