@@ -33,3 +33,47 @@ int main() {
   return 0;
 }
 */
+
+// Sem vetor
+/*
+int main(){
+
+  int interr, i= 0, lampa = 0, lampb = 0, nusr;
+  scanf("%d", &nusr);
+  for (i = 0; i < nusr; i++){
+    scanf("%d", &interr);
+    if(interr == 1)
+      lampa = 1 - lampa;
+    else{
+      lampa = 1 - lampa;
+      lampb = 1 - lampb;
+  }
+  }
+
+
+  return 0;
+}*/
+// Com vetor
+/*
+int main() {
+    int i, nusr, lampa = 0, lampb = 0, interr[N];
+    scanf("%d", &nusr);
+
+    for (i = 0; i < nusr; i++) {
+        scanf("%d", &interr[i]);
+    }
+
+    for (i = 0; i < nusr; i++) {
+        if (interr[i] == 1) {
+            lampa = 1 - lampa;
+        } else if (interr[i] == 2) {
+            lampa = 1 - lampa;
+            lampb = 1 - lampb;
+        }
+    }
+
+    printf("%d %d\n", lampa, lampb);
+
+
+    return 0;
+}*/
