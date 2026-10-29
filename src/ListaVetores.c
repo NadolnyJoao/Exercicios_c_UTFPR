@@ -1,5 +1,8 @@
 #include <stdio.h>
+
 #define N 100
+
+// QUESTÃO 1
 // Sem vetor:
 /*
 int main() {
@@ -14,15 +17,18 @@ int main() {
   printf("%d\n", total);
 
   return 0;
+}
+*/
 
-}*/
-// Com vetor
+// Com vetor:
 /*
 int main() {
   int i = 0, nUsr, total = 0, copos[N], latas[N];
   scanf("%d", &nUsr);
+
   for (i = 0; i < nUsr; i++)
     scanf("%d %d", &latas[i], &copos[i]);
+
   for (i = 0; i < nUsr; i++) {
     if (latas[i] > copos[i]) {
       total += copos[i];
@@ -34,90 +40,59 @@ int main() {
 }
 */
 
-// Sem vetor
+// QUESTÃO 2
+// Sem vetor:
 /*
-int main(){
-
-  int interr, i= 0, lampa = 0, lampb = 0, nusr;
+int main() {
+  int interr, i = 0, lampa = 0, lampb = 0, nusr;
   scanf("%d", &nusr);
-  for (i = 0; i < nusr; i++){
+
+  for (i = 0; i < nusr; i++) {
     scanf("%d", &interr);
-    if(interr == 1)
+    if (interr == 1) {
       lampa = 1 - lampa;
-    else{
+    } else if (interr == 2) {
       lampa = 1 - lampa;
       lampb = 1 - lampb;
-  }
-  }
-
-
-  return 0;
-}*/
-// Com vetor
-/*
-int main() {
-    int i, nusr, lampa = 0, lampb = 0, interr[N];
-    scanf("%d", &nusr);
-
-    for (i = 0; i < nusr; i++) {
-        scanf("%d", &interr[i]);
-    }
-
-    for (i = 0; i < nusr; i++) {
-        if (interr[i] == 1) {
-            lampa = 1 - lampa;
-        } else if (interr[i] == 2) {
-            lampa = 1 - lampa;
-            lampb = 1 - lampb;
-        }
-    }
-
-    printf("%d %d\n", lampa, lampb);
-
-
-    return 0;
-}*/
-
-// Sem vetor
-/*
-int main() {
-  int i = 0, j = 0, nUsr, val, dist, menorDist;
-  int zeros[N], qtdZeros = 0;
-
-  scanf("%d", &nUsr);
-
-  // Como precisamos da posicao de todos os zeros para calcular a menor
-distancia,
-  // armazenamos apenas os indices onde ocorrem os zeros.
-  for (i = 0; i < nUsr; i++) {
-    scanf("%d", &val);
-    if (val == 0) {
-      zeros[qtdZeros] = i;
-      qtdZeros++;
     }
   }
 
-  for (i = 0; i < nUsr; i++) {
-    menorDist = 9;
-    for (j = 0; j < qtdZeros; j++) {
-      dist = abs(i - zeros[j]);
-      if (dist < menorDist)
-        menorDist = dist;
-    }
-    printf("%d", menorDist);
-    if (i < nUsr - 1)
-      printf(" ");
-  }
-  printf("\n");
+  printf("%d\n", lampa);
+  printf("%d\n", lampb);
 
   return 0;
 }
 */
 
-// Com vetor
+// Com vetor:
 /*
 int main() {
-  int i = 0, j = 0, nUsr, dist, menorDist;
+  int i, nusr, lampa = 0, lampb = 0, interr[N];
+  scanf("%d", &nusr);
+
+  for (i = 0; i < nusr; i++) {
+    scanf("%d", &interr[i]);
+  }
+
+  for (i = 0; i < nusr; i++) {
+    if (interr[i] == 1) {
+      lampa = 1 - lampa;
+    } else if (interr[i] == 2) {
+      lampa = 1 - lampa;
+      lampb = 1 - lampb;
+    }
+  }
+
+  printf("%d\n", lampa);
+  printf("%d\n", lampb);
+
+  return 0;
+}
+*/
+// QUESTÃO 3
+/*
+int main() {
+  int i, j, nUsr, dist, menorDist;
   int fita[N];
 
   scanf("%d", &nUsr);
@@ -127,14 +102,17 @@ int main() {
 
   for (i = 0; i < nUsr; i++) {
     if (fita[i] == -1) {
-      menorDist = 9;
+      menorDist = 1000;
       for (j = 0; j < nUsr; j++) {
         if (fita[j] == 0) {
-          dist = abs(i - j);
+          dist = (i > j) ? (i - j) : (j - i);
           if (dist < menorDist)
             menorDist = dist;
         }
       }
+      if (menorDist > 9)
+        menorDist = 9;
+
       fita[i] = menorDist;
     }
   }
@@ -145,6 +123,35 @@ int main() {
       printf(" ");
   }
   printf("\n");
+
+  return 0;
+}
+*/
+// QUESTÃO 4
+/*
+int main() {
+  int i = 0, j = 0, nUsr, total = 0, repetido;
+  int ras[N];
+
+  scanf("%d", &nUsr);
+
+  for (i = 0; i < nUsr; i++)
+    scanf("%d", &ras[i]);
+
+  for (i = 0; i < nUsr; i++) {
+    repetido = 0;
+    for (j = 0; j < i; j++) {
+      if (ras[i] == ras[j]) {
+        repetido = 1;
+        break;
+      }
+    }
+    if (!repetido) {
+      total++;
+    }
+  }
+
+  printf("%d\n", total);
 
   return 0;
 }
