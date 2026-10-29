@@ -77,3 +77,75 @@ int main() {
 
     return 0;
 }*/
+
+// Sem vetor
+/*
+int main() {
+  int i = 0, j = 0, nUsr, val, dist, menorDist;
+  int zeros[N], qtdZeros = 0;
+
+  scanf("%d", &nUsr);
+
+  // Como precisamos da posicao de todos os zeros para calcular a menor
+distancia,
+  // armazenamos apenas os indices onde ocorrem os zeros.
+  for (i = 0; i < nUsr; i++) {
+    scanf("%d", &val);
+    if (val == 0) {
+      zeros[qtdZeros] = i;
+      qtdZeros++;
+    }
+  }
+
+  for (i = 0; i < nUsr; i++) {
+    menorDist = 9;
+    for (j = 0; j < qtdZeros; j++) {
+      dist = abs(i - zeros[j]);
+      if (dist < menorDist)
+        menorDist = dist;
+    }
+    printf("%d", menorDist);
+    if (i < nUsr - 1)
+      printf(" ");
+  }
+  printf("\n");
+
+  return 0;
+}
+*/
+
+// Com vetor
+/*
+int main() {
+  int i = 0, j = 0, nUsr, dist, menorDist;
+  int fita[N];
+
+  scanf("%d", &nUsr);
+
+  for (i = 0; i < nUsr; i++)
+    scanf("%d", &fita[i]);
+
+  for (i = 0; i < nUsr; i++) {
+    if (fita[i] == -1) {
+      menorDist = 9;
+      for (j = 0; j < nUsr; j++) {
+        if (fita[j] == 0) {
+          dist = abs(i - j);
+          if (dist < menorDist)
+            menorDist = dist;
+        }
+      }
+      fita[i] = menorDist;
+    }
+  }
+
+  for (i = 0; i < nUsr; i++) {
+    printf("%d", fita[i]);
+    if (i < nUsr - 1)
+      printf(" ");
+  }
+  printf("\n");
+
+  return 0;
+}
+*/
