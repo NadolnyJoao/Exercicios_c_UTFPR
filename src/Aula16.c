@@ -6,7 +6,7 @@
 #define BUFLEN 1024
 char *empacotaString(char *string) {
   int tam = strlen(string);
-  char *retorno = (char *)malloc(tam * sizeof(char) + 1);
+  char *retorno = (char *)malloc(tam + 1 * sizeof(char));
   for (int i = 0; i <= tam; i++) {
     retorno[i] = string[i];
   }
