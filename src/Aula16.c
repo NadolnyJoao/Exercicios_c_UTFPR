@@ -19,10 +19,11 @@ int main() {
   char buffer[BUFLEN];
   fgets(buffer, BUFLEN, stdin);
   char *newStr = empacotaString(buffer);
-  printf("%s\n", newStr);
+ printf("%s\n", newStr);
   free(newStr);
   return 0;
 }*/
+
 // Exercício 2
 /*
 char *concatenaStrings(char *s1, char *s2) {
@@ -46,3 +47,22 @@ int main() {
 
   return 0;
 }*/
+
+void balanceamentoDeParenteses(char *str, int *parenteses) {
+
+  int tam = strlen(str);
+  for (int i = 0; i < tam + 1; i++) {
+    if (str[i] == '(') {
+      parenteses[i] = -1;
+    }
+  }
+}
+
+int main() {
+  char *frase = "if(oie)";
+  int parenteses[7];
+  balanceamentoDeParenteses(frase, parenteses);
+  for (int i = 0; i < 7; i++)
+    printf("%d", parenteses[i]);
+  return 0;
+}
