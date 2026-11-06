@@ -47,7 +47,8 @@ int main() {
 
   return 0;
 }*/
-
+// TESTE 1 Ex 3;;
+/*
 void balanceamentoDeParenteses(char *str, int *parenteses) {
 
   int tam = strlen(str);
@@ -64,5 +65,37 @@ int main() {
   balanceamentoDeParenteses(frase, parenteses);
   for (int i = 0; i < 7; i++)
     printf("%d", parenteses[i]);
+  return 0;
+}*/
+
+void balanceamentoDeParenteses(char *s1, int *s2) {
+  int tam = strlen(s1), a, b, i;
+  for (i = 0; i < tam; i++) {
+    if (s1[i] == '(')
+      s2[i] == -1;
+    else if (s1[i] == ')')
+      s2[i] == -2;
+    else
+      s2[i] == 0;
+  }
+  for (i = 0; i < tam; i++) {
+    if (s2[i] == -1) {
+      a = i;
+    } else if (s2[i] == -2)
+      b = i;
+    s2[a] = b;
+    s2[b] = a;
+  }
+}
+
+int main() {
+  char *string1 = "Olá (tudo (bem)?";
+  int *string2;
+  int tam = strlen(string1);
+  balanceamentoDeParenteses(string1, string2);
+  for (int i = 0; i < tam; i++) {
+    printf("&d", string2[i]);
+  }
+
   return 0;
 }
