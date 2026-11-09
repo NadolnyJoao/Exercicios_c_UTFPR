@@ -29,6 +29,8 @@ int main() {
   return 0;
 }*/
 
+// Exercicio 2
+/*
 int main() {
   int i, j;
   char m[N][128];
@@ -38,6 +40,30 @@ int main() {
   }
   for (i = N - 1; i >= 0; i--) {
     printf("%s", m[i]);
+  }
+
+  return 0;
+}*/
+
+int main() {
+  int i, j;
+  // Branco = 0, preto = 1, desc = 9
+  int tab[4][4] = {{1, 0, 1, 1}, {1, 9, 9, 9}, {0, 9, 9, 9}, {0, 9, 9, 9}};
+  for (i = tab[1][0]; i < 4; i++) {
+    for (j = tab[1][0]; j < 4; j++) {
+      if (tab[i - 1][j - 1] + tab[i][j - 1] + tab[i - 1][j] == 0 ||
+          tab[i - 1][j - 1] + tab[i][j - 1] + tab[i - 1][j] == 1) {
+        tab[i][j] = 1;
+      } else {
+        tab[i][j] = 0;
+      }
+    }
+  }
+  for (i = 0; i < 4; i++) {
+    for (j = 0; j < 4; j++) {
+      printf("%d ", tab[i][j]);
+    }
+    printf("\n");
   }
 
   return 0;
