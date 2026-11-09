@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define N_COL 4
 #define N_LIN 3
+#define N 2
 // Exercicio 1;
 /*
 int main() {
@@ -27,3 +28,17 @@ int main() {
 
   return 0;
 }*/
+
+int main() {
+  int i, j;
+  char m[N][128];
+  char *buffer;
+  for (i = 0; i < N; i++) {
+    fgets(m[i], 128, stdin);
+  }
+  for (i = N - 1; i >= 0; i--) {
+    printf("%s", m[i]);
+  }
+
+  return 0;
+}
