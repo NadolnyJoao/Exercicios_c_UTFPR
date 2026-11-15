@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define N_COL 4
 #define N_LIN 3
 #define N 2
@@ -45,6 +46,8 @@ int main() {
   return 0;
 }*/
 
+// Exercicio 3
+/*
 int main() {
   int i, j;
   // Branco = 0, preto = 1, desc = 9
@@ -64,6 +67,33 @@ int main() {
       printf("%d ", tab[i][j]);
     }
     printf("\n");
+  }
+
+  return 0;
+}*/
+
+// Exercicio 4
+
+int main() {
+
+  int i, j;
+  int m[3][2];
+  int n[2][3];
+  int result[3][3];
+  for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++) {
+      m[i][j] = rand() % 10;
+    }
+  }
+  for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++) {
+      n[i][j] = rand() % 10;
+    }
+  }
+  for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++) {
+      result[i][j] = m[i][j] * n[j][i] + ;
+    }
   }
 
   return 0;
