@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 /*
@@ -59,4 +60,24 @@ GSImage *criaGSImage(int largura, int altura) {
     image->dados[i] = malloc(largura * sizeof(unsigned char));
   }
   return image;
+}
+
+GSImage *reduzPelaMetade(GSImage *img) {
+  if (img->altura % 2 != 0 || img->largura % 2 != 0) {
+    return NULL;
+  }
+  GSImage *imgreduzida = img;
+  imgreduzida->altura = img->altura / 2;
+  imgreduzida->largura = img->largura / 2;
+  for (int i = 0; i < imgreduzida->altura; i++) {
+    for (int j = 0; j < imgreduzida->largura; j++) {
+      imgreduzida->dados[i][j] = (imgreduzida->dados[i * 2][j * 2] +
+                                  imgreduzida->dados[i * 2 + 1][j * 2] +
+                                  imgreduzida->dados[i * 2][j * 2 + 1] +
+                                  imgreduzida->dados[i * 2 + 1][j * 2 + 1]) /
+                                 4;
+    }
+  }
+
+  return imgreduzida;
 }
