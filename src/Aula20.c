@@ -36,7 +36,8 @@ int main() {
   printf("maior %.0f meio %.0f menor %.0f", estruct.maior, estruct.meio,
          estruct.menor);
 }*/
-
+#define LARG 100
+#define ALT 100
 typedef struct {
   int largura;
   int altura;
@@ -80,4 +81,25 @@ GSImage *reduzPelaMetade(GSImage *img) {
   }
 
   return imgreduzida;
+}
+
+void desenha() {
+  float media1 = 0, media2 = 0;
+  GSImage *imagem = criaGSImage(LARG, ALT);
+  for (int i = 0; i < ALT; i++) {
+    for (int j = 0; j < LARG; j++) {
+      imagem->dados[i][j] = i * j;
+      media1 += imagem->dados[i][j];
+    }
+  }
+  GSImage *imagemReduzida = reduzPelaMetade(imagem);
+  for (int i = 0; i < ALT; i++) {
+    for (int j = 0; j < LARG; j++) {
+      media2 += imagemReduzida->dados[i][j];
+    }
+  }
+  printf("%.2f %.2f", media1, media2);
+  destroiGSImage(imagemReduzida);
+  destroiGSImage(imagem);
+  return;
 }
